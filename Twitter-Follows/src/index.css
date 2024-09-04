@@ -3,6 +3,6 @@ body
     margin: 0;
     display: grid;
     place-content: center;
-    background-color: #222;
+    background-color: #000000;
     min-height: 100vh;
 }

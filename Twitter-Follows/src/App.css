@@ -10,11 +10,29 @@ article
     color: #fff;
     font-size: .8rem;
     justify-content: space-between;
+    background-color: #000000;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+article > strong
+{
+    margin-left:5px;
+}
+
+article:hover
+{
+    background-color: rgb(29, 29, 29);
+}
+
+article:hover strong
+{
+    text-decoration: underline;
 }
 
 article+article
 {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 article header 
@@ -22,6 +40,7 @@ article header
     display: flex;
     align-items: center;
     gap: 4px;
+    padding: 5px 10px;
 }
 
 article header div 
@@ -37,17 +56,50 @@ article header span
 
 article img
 {
-    width: 48px;
-    height: 48px;
-    border-radius: 100%
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0 2px;
 }
 
-article button{
-    margin-left: 16px;
+.tw-followCard-info span
+{
+    font-size: .7rem;
+}
+
+article button
+{
+    margin-left: 15px;
     border: 0;
     border-radius: 999px;
     padding: 6px 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: all .1s ease-in-out;
 }
 
+article button:hover
+{
+    opacity: .8;
+}
+
+article aside
+{
+    margin: 0 15px 0 15px;
+}
+
+.tw-followCard-section
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 0 15px 0;
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 20px;
+}
+
+.tw-followCard-section > strong
+{
+    color: #fff;
+    margin: 5px 15px;
+}

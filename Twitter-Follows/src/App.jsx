@@ -6,11 +6,13 @@ function App ()
 {
     return(
         <>
+        <aside className="tw-followCard-section">
             <strong>A quién seguir</strong>
-            <TwitterFollowCard userName={"SrSelian"}></TwitterFollowCard>
-            <TwitterFollowCard userName={"SutsukiChan_"}></TwitterFollowCard>
+            <TwitterFollowCard userName={"SrSelian"} isFollowing={true}></TwitterFollowCard>
+            <TwitterFollowCard userName={"SutsukiChan_"} isFollowing={true}></TwitterFollowCard>
             <TwitterFollowCard userName={"UanPreyas"}></TwitterFollowCard>
             <TwitterFollowCard userName={"_Anandah"}></TwitterFollowCard>
+        </aside>
         </>
     )
 }
