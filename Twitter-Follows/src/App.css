@@ -89,7 +89,7 @@ article header span
     border: 1px solid #bbb;
     background: transparent;
     color: #fff;
-    width: 140px;
+    max-width: 110px;
 }
 
 .tw-followCard-button.is-following:hover
@@ -103,6 +103,7 @@ article header span
 .tw-followCard-button.is-following:hover .tw-followCard-stopFollow
 {
     display: block;
+    font-size: .6rem;
 }
 
 
