@@ -30,10 +30,10 @@ article:hover strong
     text-decoration: underline;
 }
 
-article+article
+/*article+article
 {
     margin-top: 5px;
-}
+}*/
 
 article header 
 {
@@ -54,7 +54,7 @@ article header span
     opacity: .6;
 }
 
-article img
+.tw-followCard-avatar
 {
     width: 40px;
     height: 40px;
@@ -67,7 +67,7 @@ article img
     font-size: .7rem;
 }
 
-article button
+.tw-followCard-button
 {
     margin-left: 15px;
     border: 0;
@@ -78,10 +78,39 @@ article button
     transition: all .1s ease-in-out;
 }
 
-article button:hover
+.tw-followCard-button:hover
 {
     opacity: .8;
 }
+
+.tw-followCard-button.is-following
+{
+    margin-left: 15px;
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff;
+    width: 140px;
+}
+
+.tw-followCard-button.is-following:hover
+{
+    opacity: .8;
+    border: 1px solid red;
+    background: rgba(255, 85, 85, 0.26);
+    color: red;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-stopFollow
+{
+    display: block;
+}
+
+
+.tw-followCard-button.is-following:hover .tw-followCard-text
+{
+    display: none;
+}
+
 
 article aside
 {
@@ -92,9 +121,10 @@ article aside
 {
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
     flex-direction: column;
     padding: 10px 0 15px 0;
-    border: 1px solid rgb(66, 66, 66);
+    border: 1px solid #bbb;
     border-radius: 20px;
 }
 
@@ -102,4 +132,9 @@ article aside
 {
     color: #fff;
     margin: 5px 15px;
+}
+
+.tw-followCard-stopFollow
+{
+    display: none;
 }
